@@ -15,20 +15,20 @@ const Login = () => {
 
   return (
     <div id="loginPageContainer" className="w-full h-screen">
-      <div id='imgContainer' className="w-full h-full bg-cover bg-left relative flex" style={{backgroundImage: `url(${LOGIN_IMG})`}} >
+      <div id='mainContainer' className="w-full h-full bg-cover bg-left relative flex" style={{backgroundImage: `url(${LOGIN_IMG})`}} >
 
           <img src={SM_LOGO} alt="smlogo" className='w-16 h-16 bg-white text-center rounded-xl absolute top-10 left-10'></img>
 
-          <div className="bg-black opacity-80 w-2/6 h-5/6 m-auto my-14 absolute right-20 flex flex-col items-left text-white p-12 rounded-2xl">
+          <div className="bg-black opacity-80 absolute m-auto flex flex-col items-left text-white p-12 text-xs lg:text-base w-full h-full md:w-3/6 md:h-5/6 md:my-14 md:right-20 sm:rounded-2xl lg:w-2/5 lg:h-5/6 lg:my-14 lg:right-20 lg:rounded-2xl">
              
             {isSignInForm ? <SignIn/>:<SignUp/>}
             
             {isSignInForm ? 
-              <div id="register" className='w-full mt-12 ml-2 text-center flex gap-2 justify-center' >
+              <div id="register" className='w-full mt-12 ml-2 text-center flex gap-2 justify-center text-sm' >
                   <p>New to StreamMax ?</p>
                   <button className='cursor-pointer' onClick={()=>{toggleSignIn()}}>Sign Up now.</button>
               </div>:
-              <div id="register" className='w-full mt-8 ml-2 mb-12 text-center flex gap-2 justify-center' >
+              <div id="register" className='w-full mt-8 ml-2 mb-12 text-center flex gap-2 justify-center text-sm' >
               <p>Already Signed Up ?</p>
               <button className='cursor-pointer' onClick={()=>{toggleSignIn()}}>Sign In now.</button>
               </div>
