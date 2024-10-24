@@ -8,3 +8,5 @@ This is a Video Streaming application which is built with React and Firebase.
     -Validations✅
 -useRef Hook✅
 -Setup and prod Deployement on Firebase✅
+-Redux Store Setup✅
+-fetching data from TBDB

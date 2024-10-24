@@ -8,7 +8,7 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBb4KkkUSkYWVoBpdwOswrEvp2ltOmbops",
+  apiKey: process.env.REACT_APP_FIREBASE_API,
   authDomain: "streammax-aa90f.firebaseapp.com",
   projectId: "streammax-aa90f",
   storageBucket: "streammax-aa90f.appspot.com",
@@ -20,6 +20,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
 console.log(analytics);
 
 export const auth = getAuth();
