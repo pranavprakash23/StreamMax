@@ -80,8 +80,6 @@ const Login = () => {
     <div id="loginPageContainer" className="w-full h-screen">
       <div id='mainContainer' className="w-full h-full bg-cover bg-left relative flex" style={{backgroundImage: `url(${LOGIN_IMG})`}} >
 
-          {/* <img src={SM_LOGO} alt="smlogo" className='w-12 h-12 bg-white text-center rounded-xl absolute top-5 left-10'></img> */}
-
           <Header/>
 
           <div className="bg-black opacity-80 absolute m-auto flex flex-col items-left text-white p-12 text-xs lg:text-base w-full h-full md:w-3/6 md:h-5/6 md:my-14 md:right-20 sm:rounded-2xl lg:w-2/5 lg:h-5/6 lg:my-14 lg:right-20 lg:rounded-2xl">

@@ -11,10 +11,9 @@ const MainContainer = () => {
   const { imdb_id } = mainMovie;
 
   return (
-    <div>
+    <div className="w-full h-screen">
       <VideoTitle/>
       <VideoBackground id={imdb_id}/>
-      
     </div>
   );
 };

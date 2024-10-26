@@ -35,18 +35,15 @@ const Header = () =>{
     }, []);
 
     return (
-        <div className='w-screen'>
-            <div className='flex flex-row justify-between top-5 relative items-center px-10'>
-                <div className=' relative'>
-                    <img src={SM_LOGO} alt="smlogo" className='w-12 h-12 bg-white text-center rounded-xl '></img>
-                </div>
+            <div className="absolute w-screen px-8 py-4 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
+
+                <img src={SM_LOGO} alt="smlogo" className='w-12 h-12 bg-white text-center rounded-xl '></img>
 
                 <button onClick={()=>{
                 handleButtonClick()
-               }} >Sign Out</button>
+               }} className="font-bold text-white ">Sign Out</button>
 
             </div>
-        </div>
     )
 }
 
