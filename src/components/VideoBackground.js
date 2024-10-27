@@ -3,8 +3,9 @@ import { useSelector } from "react-redux";
 import useMovieDetails from "../hooks/useMovieDetails"
 
 const VideoBackground = ({id}) => {
-    const movieDetails = useSelector((store) => store.movies?.movieDetails?.results);
     useMovieDetails(id);
+    const movieDetails = useSelector((store) => store.movies?.movieDetails[id]?.results);
+    
 
   return (
     

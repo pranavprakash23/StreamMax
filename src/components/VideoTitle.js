@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const VideoTitle = () => {
-  const movieDetails = useSelector((store) => store.movies?.movieDetails?.results);
+const VideoTitle = ({id}) => {
+  const movieDetails = useSelector((store) => store.movies?.movieDetails[id]?.results);
   return (
     <div className="w-screen aspect-video pt-[20%] px-24 flex flex-col gap-4 absolute text-white bg-gradient-to-r from-black">
         <h1 className="text-4xl font-bold">{movieDetails?.title}</h1>

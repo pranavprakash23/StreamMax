@@ -1,23 +1,23 @@
 import {API_OPTION} from "../utils/constants";
-import {addMovieDetails} from "../utils/moviesSlice"
+import {addActionMovies} from "../utils/moviesSlice"
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 
-const useMoviesDetails = (id) => {
+const useActionMovies = () => {
 
     const dispatch = useDispatch();
-    const url = `https://moviesminidatabase.p.rapidapi.com/movie/id/${id}`;
+    const url = `https://moviesminidatabase.p.rapidapi.com/movie/byGen/Action/`;
     API_OPTION.headers["x-rapidapi-host"] = "moviesminidatabase.p.rapidapi.com";
 
-    const getMovieDetails = async () => {
+    const getActionMovie = async () => {
     const response = await fetch(url, API_OPTION);
     const result = await response.json();
-    dispatch(addMovieDetails(result));
+    dispatch(addActionMovies(result));
     };
     
     useEffect(() => {
-    getMovieDetails();
+        getActionMovie();
     }, []);
 }
 
-export default useMoviesDetails;
+export default useActionMovies;

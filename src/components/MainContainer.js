@@ -7,12 +7,12 @@ const MainContainer = () => {
   const movies = useSelector((store) => store.movies?.nowPlayingMovies);
 
   if (!movies|| !movies?.results) return;
-  const mainMovie = movies?.results[1];
+  const mainMovie = movies?.results[6];
   const { imdb_id } = mainMovie;
 
   return (
     <div className="w-full h-screen">
-      <VideoTitle/>
+      <VideoTitle id={imdb_id}/>
       <VideoBackground id={imdb_id}/>
     </div>
   );
