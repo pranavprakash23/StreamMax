@@ -13,3 +13,6 @@ This is a Video Streaming application which is built with React and Firebase.
 -custom hooks created✅
 -Redux slices created✅
 -Browser video fetch and embedded ✅
+-GPT Search Page
+-GPT Search Bar
+-Multilingual support for GPT page

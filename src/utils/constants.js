@@ -5,3 +5,9 @@ export const API_OPTION = {
       "x-rapidapi-host": "",
     },
   };
+
+export const SUPPORTED_LANGUAGE = [
+  {identifier: "en", name : "English"},
+  {identifier: "hindi", name : "Hindi"},
+  {identifier: "spanish", name : "Spanish"}
+]
