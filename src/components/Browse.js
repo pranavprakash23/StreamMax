@@ -11,17 +11,24 @@ const Browse = () => {
   useActionMoviesDetails();
 
   const toggleGPTSearchView = useSelector((store)=>store?.gpt?.showGPTSearch);
+  const movies = useSelector((store) => store.movies?.nowPlayingMovies);
+  
   
   return (
     <div className='w-full h-full overflow-x-hidden'>
-      <Header />
-      {
-      toggleGPTSearchView ? <GPTSearch/> : 
+      {movies && 
       <>
-        <MainContainer/>
-        <SecondaryContainer/>
+        <Header />
+        {
+        toggleGPTSearchView ? <GPTSearch/> : 
+        <>
+          <MainContainer/>
+          <SecondaryContainer/>
+        </>
+        }
       </>
       }
+      
       
       
     </div>

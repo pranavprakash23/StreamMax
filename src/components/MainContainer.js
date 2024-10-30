@@ -9,11 +9,16 @@ const MainContainer = () => {
   if (!movies|| !movies?.results) return;
   const mainMovie = movies?.results[6];
   const { imdb_id } = mainMovie;
+  
 
   return (
-    <div className="w-full h-screen">
-      <VideoTitle id={imdb_id}/>
-      <VideoBackground id={imdb_id}/>
+    <div className="w-full">
+      {mainMovie && 
+      <>
+        <VideoTitle id={imdb_id}/>
+        <VideoBackground id={imdb_id}/>
+      </>
+      }
     </div>
   );
 };

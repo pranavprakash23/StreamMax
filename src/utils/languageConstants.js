@@ -1,15 +1,18 @@
 const lang = {
     en: {
-        search: "search",
-        gptPlaceholder : "What would you like to watch?"
+        search: "Search",
+        gptPlaceholder : "What would you like to watch?",
+        keyPlaceholder : "Please enter your OPENAI API key"
     },
     hindi: {
         search : "खोज",
-        gptPlaceholder : "आप क्या देखना चाहेंगे?"
+        gptPlaceholder : "आप क्या देखना चाहेंगे?",
+        keyPlaceholder : "कृपया अपनी OPENAI API कुंजी दर्ज करें"
     },
     spanish: {
-        search : "buscar",
-        gptPlaceholder : "¿Qué te gustaría ver?"
+        search : "Buscar",
+        gptPlaceholder : "¿Qué te gustaría ver?",
+        keyPlaceholder : "Por favor ingrese su clave API OPENAI"
     }
 }
 

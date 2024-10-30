@@ -49,13 +49,13 @@ const Header = () =>{
     }
 
     return (
-            <div className="absolute w-screen px-8 py-4 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
+            <div className="absolute w-screen px-8 py-4 bg-gradient-to-b from-black z-10 flex flex-row justify-between gap-6">
 
-                <img src={SM_LOGO} alt="smlogo" className='w-12 h-12 bg-white text-center rounded-xl '></img>
+                <img src={SM_LOGO} alt="smlogo" className='w-12 h-12 bg-white text-center rounded-xl'></img>
 
                 {user && 
                     (
-                        <div className='flex gap-2'>
+                        <div className='flex gap-2 justify-evenly'>
                             {showGPTSearch && (<select className='p-2 m-2 rounded-md bg-slate-800 text-white' onChange={(e)=>languageSelected(e)}>
                                 {
                                     SUPPORTED_LANGUAGE.map((lang) => {
