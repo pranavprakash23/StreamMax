@@ -123,12 +123,12 @@ const Login = () => {
                 handleButtonClick()
                }} className='w-5/6 h-full m-auto p-3 border border-gray-300 rounded-md bg-gray-200 text-black font-semibold mt-6'>{isSignInForm ? "Sign In": "Sign Up"}</button>
                
-               <p className='text-center'>OR</p>
+               {/* <p className='text-center'>OR</p>
 
                <button type="submit" className='w-5/6 h-full m-auto p-3 border border-gray-300 rounded-md bg-black text-white font-normal flex gap-2 items-center justify-center'>
                  <img src={GOOGLE_IMG} alt="gmailImg" className='w-5 h-5 bg-white text-center rounded-xl' />
                  <p>Sign In With Google</p>
-               </button>
+               </button> */}
              </form>
             
               <footer>
