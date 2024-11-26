@@ -1,5 +1,6 @@
 This is a Video Streaming application which is built with React and Firebase.
 
+Hosting URL: https://streammax-aa90f.web.app
 
 -Landing Page (Pending)
 -Routing✅
